@@ -5,6 +5,7 @@ cd /minecraft-init
 # Copy server folders to the server directory
 cp -r -f ./.fabric /minecraft
 cp -r -f ./libraries /minecraft
+cp -r -f ./config /minecraft
 cp -r -f ./mods /minecraft
 cp -r -f ./versions /minecraft
 
