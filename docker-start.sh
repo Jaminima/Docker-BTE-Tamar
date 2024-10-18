@@ -3,10 +3,10 @@
 cd /minecraft-init
 
 # Copy server folders to the server directory
-# cp -r -f ./cache /minecraft
-# cp -r -f ./libraries /minecraft
-# cp -r -f ./plugins /minecraft
-# cp -r -f ./versions /minecraft
+cp -r -f ./.fabric /minecraft
+cp -r -f ./libraries /minecraft
+cp -r -f ./mods /minecraft
+cp -r -f ./versions /minecraft
 
 # Copy the server files
 cp ./eula.txt /minecraft
