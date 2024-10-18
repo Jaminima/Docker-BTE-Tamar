@@ -9,9 +9,8 @@ cd /minecraft-init
 # cp -r -f ./versions /minecraft
 
 # Copy the server files
-# cp ./eula.txt /minecraft
-# cp ./paper.jar /minecraft
-# cp ./server-icon.png /minecraft
+cp ./eula.txt /minecraft
+cp ./fabric.jar /minecraft
 
 # Start the server
 cd /minecraft

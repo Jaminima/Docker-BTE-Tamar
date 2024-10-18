@@ -4,7 +4,7 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get install -y \
     openjdk-21-jdk \
     wget \
-    dos2unix \
+    dos2unix
 
 #Java Port
 EXPOSE 25565
