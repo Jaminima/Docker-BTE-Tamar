@@ -27,16 +27,6 @@ RUN java -jar fabric.jar
 #Accept the eula
 RUN echo "eula=true" > /minecraft-init/eula.txt
 
-#------Mods------
-
-RUN wget -O /minecraft-init/modpack.zip https://download1500.mediafire.com/pgarv7iwejegJSxtpkNbm-XqvnivurMMhtK-dP8xx4T7t_hwYihCVyJAlFcFTowdUGU-wHKrCKKYkgg7bNjanAHVE-4KsbxTbRC-HAf60W1uRtlMMJJrCO9dY4KimliGsAWH4wwUURPR9EfaTDq7vOy2b50e_Ak7Hbb0pJ5_rc8DH6w/fbgu0v89p762v45/Create_%26_Explore_1.20.1_v1.zip
-
-#Unzip the modpack into minecraft-init
-RUN 7z x modpack.zip -o/minecraft-init
-
-#Remove the zip file
-RUN rm modpack.zip
-
 #------Start The Server------
 
 #Copy The Start Script

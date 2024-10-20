@@ -7,3 +7,4 @@ services:
         - "25565:25565"
       volumes:
         - ./server:/minecraft
+        - ./mods:/minecraft-init/mods
