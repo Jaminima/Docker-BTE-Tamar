@@ -19,10 +19,10 @@ RUN chmod 777 /minecraft-init
 WORKDIR /minecraft-init
 
 #Download the paper jar
-RUN wget -O /minecraft-init/fabric.jar https://meta.fabricmc.net/v2/versions/loader/1.20.1/0.16.7/1.0.1/server/jar
+COPY ./forge/ /minecraft-init/
 
 #Run the server for the first time to generate the eula
-RUN java -jar fabric.jar
+RUN bash run.sh
 
 #Accept the eula
 RUN echo "eula=true" > /minecraft-init/eula.txt

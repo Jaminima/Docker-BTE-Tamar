@@ -1,6 +1,6 @@
 services:
     paper:
-      image: jaminima/fabric
+      image: jaminima/orange-juice
       stdin_open: true
       tty: true
       ports:
