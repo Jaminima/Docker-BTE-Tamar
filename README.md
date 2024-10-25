@@ -1,4 +1,4 @@
-# Paper MC Docker Container
+# Orange Juice MC Docker Container
 
 Deploy configurable Minecraft Paper servers easily and realiably with this handy container. This server comes with several preconfigured plugins, learn below how to add your own!
 
