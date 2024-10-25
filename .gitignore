@@ -1,2 +1,5 @@
 server/*
 nginx/ssl/*
+mods/*
+mods-old/*
+forge/*
