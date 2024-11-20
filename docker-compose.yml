@@ -1,6 +1,6 @@
 services:
-    paper:
-      image: jaminima/orange-juice
+    bte-plym:
+      image: jaminima/bte-plym
       stdin_open: true
       tty: true
       ports:

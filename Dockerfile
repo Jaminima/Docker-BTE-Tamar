@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 #Install Neccessary Packages
 RUN apt-get update && apt-get install -y \
-    openjdk-21-jdk \
+    openjdk-8-jdk \
     wget \
     dos2unix \
     p7zip-full
@@ -18,11 +18,11 @@ RUN chmod 777 /minecraft-init
 
 WORKDIR /minecraft-init
 
-#Download the paper jar
+#Download the forge files
 COPY ./forge/ /minecraft-init/
 
 #Run the server for the first time to generate the eula
-RUN bash run.sh
+RUN java -Xmx1024M -Xms1024M -jar forge-1.12.2-14.23.5.2859.jar nogui
 
 #Accept the eula
 RUN echo "eula=true" > /minecraft-init/eula.txt
