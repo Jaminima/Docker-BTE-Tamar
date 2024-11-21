@@ -13,4 +13,4 @@ cp ./*.jar /minecraft
 
 # Start the server
 cd /minecraft
-java -jar -Xmx6G -Xms6G -jar forge-1.12.2-14.23.5.2859.jar nogui
+java -jar -Xmx16G -Xms16G -Dfml.queryResult=confirm -jar forge-1.12.2-14.23.5.2859.jar nogui
