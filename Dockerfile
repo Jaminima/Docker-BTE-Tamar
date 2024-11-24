@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 #Install Neccessary Packages
 RUN apt-get update && apt-get install -y \
-    openjdk-8-jdk \
+    openjdk-8-jdk:amd64 \
     wget \
     dos2unix \
     p7zip-full
