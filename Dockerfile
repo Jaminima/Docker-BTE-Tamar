@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 #Install Neccessary Packages
 RUN apt-get update && apt-get install -y \
-    openjdk-8-jdk:amd64 \
+    openjdk-21-jdk \
     wget \
     dos2unix \
     p7zip-full
@@ -18,11 +18,11 @@ RUN chmod 777 /minecraft-init
 
 WORKDIR /minecraft-init
 
-#Download the forge files
-COPY ./forge/ /minecraft-init/
+#Run the server for the first time to generate the eula
+RUN wget -O /minecraft-init/fabric.jar https://meta.fabricmc.net/v2/versions/loader/1.21.1/0.16.9/1.0.1/server/jar
 
 #Run the server for the first time to generate the eula
-RUN java -Xmx1024M -Xms1024M -jar forge-1.12.2-14.23.5.2859.jar nogui
+RUN java -jar fabric.jar
 
 #Accept the eula
 RUN echo "eula=true" > /minecraft-init/eula.txt

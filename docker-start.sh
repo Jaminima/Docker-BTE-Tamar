@@ -3,13 +3,15 @@
 cd /minecraft-init
 
 # Copy server folders to the server directory
+cp -r -f ./.fabric /minecraft
 cp -r -f ./libraries /minecraft
+cp -r -f ./config /minecraft
 cp -r -f ./mods /minecraft
+cp -r -f ./versions /minecraft
 
 # Copy the server files
 cp ./eula.txt /minecraft
 cp ./server.properties /minecraft
-cp ./*.jar /minecraft
 
 # Start the server
 cd /minecraft
