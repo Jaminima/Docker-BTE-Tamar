@@ -21,6 +21,9 @@ WORKDIR /minecraft-init
 #Run the server for the first time to generate the eula
 RUN wget -O /minecraft-init/fabric.jar https://meta.fabricmc.net/v2/versions/loader/1.21.1/0.16.9/1.0.1/server/jar
 
+#COPY The Server Config
+COPY ./conf/server.properties /minecraft-init/server.properties
+
 #Run the server for the first time to generate the eula
 RUN java -jar fabric.jar
 
