@@ -10,6 +10,9 @@ RUN apt-get update && apt-get install -y \
 #Java Port
 EXPOSE 25565
 
+#Voice Chat Port
+EXPOSE 24454
+
 #------Configure Minecraft Server------
 
 #Create a directory for the server
