@@ -1,6 +1,6 @@
 services:
-    bte-plym-1.21:
-      image: jaminima/bte-plym-1.21
+    bte-tamar:
+      image: jaminima/bte-tamar
       stdin_open: true
       tty: true
       ports:
