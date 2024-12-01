@@ -1,10 +1,11 @@
 services:
-    paper:
-      image: jaminima/orange-juice
+    bte-plym-1.21:
+      image: jaminima/bte-plym-1.21
       stdin_open: true
       tty: true
       ports:
         - "25565:25565"
+        - "24454:24454"
       volumes:
         - ./server:/minecraft
         - ./mods:/minecraft-init/mods
