@@ -11,7 +11,10 @@ RUN apt-get update && apt-get install -y \
 EXPOSE 25565
 
 #Voice Chat Port
-EXPOSE 24454
+EXPOSE 24454/udp
+
+#Plan Port
+EXPOSE 8804
 
 #------Configure Minecraft Server------
 
